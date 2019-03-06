@@ -7,7 +7,6 @@ from urlparse import urlparse
 import os
 from mtranslate import translate
 from argparse import ArgumentParser
-from oauth2client import tools
 reload(sys)  
 sys.setdefaultencoding('utf8')
 
@@ -75,7 +74,7 @@ def generateSubFolder(args):
 
 #----------------------------------------------------------------------------------------------------------------------------------
 def main():
-    parser = ArgumentParser(description='Translate subtitle from media id, file or folder', parents=[tools.argparser])    
+    parser = ArgumentParser(description='Translate subtitle from media id, file or folder', parents=[])    
     parser.add_argument('-v', '--verbose', action='store_true', dest='VERBOSE', default=False, help='Verbose')        
     parser.add_argument('-t', '--sourceType', type=str, dest='SOURCE_TYPE', help='source type, pick between media|file|folder')
     parser.add_argument('-s', '--source', type=str, dest='SOURCE', help='source of the subtitle/s')

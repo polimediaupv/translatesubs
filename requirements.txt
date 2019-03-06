@@ -1,0 +1,9 @@
+chardet==3.0.4
+httplib2==0.12.1
+mtranslate==1.6
+oauth2client==4.1.3
+pyasn1==0.4.5
+pyasn1-modules==0.2.4
+pysrt==1.1.1
+rsa==4.0
+six==1.12.0

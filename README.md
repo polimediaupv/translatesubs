@@ -1,8 +1,8 @@
-#TRANSLATE SUBS
+# TRANSLATE SUBS
 
 Simple tool to translate subtitles from the command prompt using google apis
 
-#INSTALLATION
+# INSTALLATION
 
 we recomend using virtualenv for this, once the virtualenv is activated just install the dependencies using pip
 
@@ -10,11 +10,11 @@ we recomend using virtualenv for this, once the virtualenv is activated just ins
 foo@bar:~$ pip install requirements.txt
 ```
 
-#USAGE
+# USAGE
 
 the tool has 3 work modes depending on the source type 
 
-##MEDIA ID
+## MEDIA ID
 
 In this mode it will translate a media.upv.es subtitle using google api
 
@@ -23,7 +23,7 @@ Example:
 foo@bar:~$ python translatesubs.py -t media -s a90ae7d0-5ccf-11e8-aab9-a1a4e108f2ab 
 ```
 
-#SUBTITLE FILE
+# SUBTITLE FILE
 
 In this mode it will translate a ´.srt´ file 
 
@@ -31,7 +31,7 @@ In this mode it will translate a ´.srt´ file
 foo@bar:~$ python translatesubs.py -t file -s a90ae7d0-5ccf-11e8-aab9-a1a4e108f2ab_en.srt -langf en -langt es
 ```
 
-#SUBTITLE FOLDER
+# SUBTITLE FOLDER
 
 In this mode it will translate every ´.srt´file in a folder and subfolders
 
@@ -39,7 +39,7 @@ In this mode it will translate every ´.srt´file in a folder and subfolders
 foo@bar:~$ python translatesubs.py -t folder -s test/ -langf en -langt es
 ```
 
-#PARAMETERS
+# PARAMETERS
 -h, --help            show this help message and exit
 -v, --verbose         Verbose (activate this if you want to see what is being sent to google api to translate)
 -t SOURCE_TYPE, --sourceType SOURCE_TYPE source type, pick between media|file|folder
